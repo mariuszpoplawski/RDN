@@ -39,10 +39,11 @@ def avgof5to16hr(hours):
 		summary = 0.0
 
 		for hour in hours:
-			if int(hour[0]) in range(5,17):
-				summary = summary + float(hour[1].replace(",","."))
+			#print(hour[1])
+			#if int(hour[0]) in range(1,25):
+			summary = summary + float(hour[1].replace(",","."))
 
-		return summary / 12
+		return summary / 24
 	except:
 		return 0
 
@@ -75,16 +76,16 @@ if args[1] == "srednia":
 			#print(str(i)+"/"+month+"/"+year)
 			#print(dayAVG)
 		suma = suma / monthDays
-		print("Srednia RDN cen z miesiaca miedzy godzinami 5 a 16: "+month+"/"+year)
+		print("Srednia RDN cen z miesiaca "+month+"/"+year)
 		print(suma)
 		
 	if args[2] == "dzien":
 		day = GetDay(day,month,year) 
-		print("Srednia RDN cena od 5 do 16 dnia "+str(args[3])+":")
+		print("Srednia RDN cena z dnia "+str(args[3])+":")
 		print(avgof5to16hr(day))
 else:
-	print("python3 RDN.py  srednia dzien 28/07/2019 - obliczanie sredniej z dnia dla godzin 5-16 (Czas pracy farm PV)")
-	print("python3 RDN.py  srednia miesiac 01/06/2020 - obliczanie sredniej z miesiaca (czerwiec 06) dla godzin 5-16 (Czas pracy farm PV)")
+	print("python3 RDN.py  srednia dzien 28/07/2019 - obliczanie sredniej z dnia ")
+	print("python3 RDN.py  srednia miesiac 01/06/2020 - obliczanie sredniej z miesiaca ")
 	exit()
 
 
