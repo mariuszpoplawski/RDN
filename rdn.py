@@ -84,7 +84,7 @@ if args[1] == "srednia":
 		print(avgof5to16hr(day))
 else:
 	print("python3 RDN.py  srednia dzien 28/07/2019 - obliczanie sredniej z dnia dla godzin 5-16 (Czas pracy farm PV)")
-	print("python3 RDN.py  srednia miesiac 01/06/201 - obliczanie sredniej z miesiaca (czerwiec 06) dla godzin 5-16 (Czas pracy farm PV)")
+	print("python3 RDN.py  srednia miesiac 01/06/2020 - obliczanie sredniej z miesiaca (czerwiec 06) dla godzin 5-16 (Czas pracy farm PV)")
 	exit()
 
 
